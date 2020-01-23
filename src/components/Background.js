@@ -24,7 +24,8 @@ function Background() {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    background: `url('${data.url}') no-repeat center center fixed`
+    background: `url('${data.url}') no-repeat center center fixed`,
+    backgroundSize: 'cover',
   };
 
   return (
