@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import Tile from './InfoTile';
 import axios from 'axios';
 
 
 function Background() {
 // SETTING STATE
-  const [img, setImg] = useState([]);
+  const [data, setData] = useState([]);
 
 // SETTING UP USEEFFECT & GETTING API DATA THROUGH AXIOS
   useEffect(() => {
@@ -12,20 +13,24 @@ function Background() {
       .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
       .then(res => {
         console.log(res.data);
-        setImg(res.data.url);
+        setData(res.data);
       });
   }, []);
 
 // SETTING UP BACKGROUND STYLE
   const STYLE = {
     width: '100%',
-    height: '100vh',
-    position: 'fixed',
-    background: `url('${img}')`
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: `url('${data.url}') no-repeat center center fixed`
   };
 
   return (
-    <div style={STYLE}></div>
+    <div style={STYLE}>
+      <Tile tile={data} />
+    </div>
   );
 }
 

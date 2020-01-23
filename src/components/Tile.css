@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%;
+}
+
+.tile-container {
+  width: 80%;
+  display: block;
+  margin: 10% auto;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: linear-gradient(to bottom, #171717, #000000);
+  border-radius: 10px;
+}
+
+.img {
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  background-size: contain;
+  border-radius: 5px;
+  border: solid 1px black;
+}
+.img img {
+  width: 100%;
+}
+
+
+h2 {
+  font-size: 5rem;
+  background: -webkit-linear-gradient(80deg, white, #c168c4, #94bb2f, #381665, #11064f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+p {
+  color: #eee;
+}
+
+.exp {
+  text-align: justify;
+}
+.exp p {
+  font-size: 1.5rem;
+}
