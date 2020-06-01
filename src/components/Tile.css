@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Bebas Neue', cursive; */
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  background: -webkit-linear-gradient(80deg, white, #c168c4, #94bb2f, #381665, #11064f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  color: #eee;
+  font-size: 1.2rem;
+}
